@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Novel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>Upload Novel</h1>
+    </header>
+    <div class="container">
+        <form action="upload_novel.php" method="post" enctype="multipart/form-data">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="genre">Genre:</label>
+            <select id="genre" name="genre" required>
+                <option value="fantasy">Fantasy</option>
+                <option value="romance">Romance</option>
+                <option value="horror">Horror</option>
+                <option value="science-fiction">Science Fiction</option>
+                <option value="adventure">Adventure</option>
+                <option value="mystery">Mystery</option>
+                <option value="drama">Drama</option>
+                <!-- Tambahkan genre lainnya sesuai kebutuhan -->
+            </select>
+
+            <label for="synopsis">Synopsis:</label>
+            <textarea id="synopsis" name="synopsis" rows="5" required></textarea>
+
+            <label for="image">Novel Image:</label>
+            <input type="file" id="image" name="image" required>
+
+            <!-- reCAPTCHA widget -->
+            <div class="g-recaptcha" data-sitekey="6LeCY6EqAAAAAF9lggPqPHu74aeLutBwU9TuTqhAY"></div>
+
+            <button type="submit">Upload Novel</button>
+        </form>
+    </div>
+</body>
+</html>
