@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Sidebar Menu */
+.sidebar {
+  background-color: #5f2a8b;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  top: 0;
+  left: 0;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu-icon {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-items {
+  margin-top: 20px;
+}
+
+.menu-items a {
+  padding: 10px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #fff;
+}
+
+/* Main Content */
+.content {
+  margin-left: 260px;
+  padding: 20px;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5f2a8b;
+  padding: 10px;
+}
+
+.logo-home img {
+  width: 50px;
+}
+
+.page-title {
+  font-size: 28px;
+}
+
+/* Call to Action */
+.cta {
+  background-color: #5f2a8b;
+  padding: 20px;
+  text-align: center;
+}
+
+.cta h1 {
+  font-size: 30px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 70%;
+}
+
+#genreSelect {
+  padding: 10px;
+  width: 25%;
+}
+
+/* Popular and Latest Novels */
+.novel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.novel-item {
+  background-color: #3c1c61;
+  padding: 15px;
+  width: calc(33.33% - 20px);
+  border-radius: 5px;
+}
+
+.novel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.novel-item h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.novel-item p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novel Free</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <!-- Sidebar Menu (☰) -->
+  <nav id="menu" class="sidebar">
+    <div class="menu-header">
+      <span class="menu-title">Novel Free</span>
+      <button id="toggleMenu" class="menu-icon">☰</button>
+    </div>
+    <div id="menuItems" class="menu-items">
+      <a href="login.html">Login</a>
+      <a href="bookmark.html">Bookmark</a>
+      <a href="settings.html">Pengaturan</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Top Banner (Home, Genre) -->
+    <div class="banner">
+      <div class="logo-home">
+        <img src="assets/images/logo-home.png" alt="Home Logo">
+      </div>
+      <div class="page-title" id="pageTitle">Home</div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta">
+      <h1>Baca Novel Gratis Hanya di Novel Free</h1>
+    </div>
+
+    <!-- Search Bar for Novels -->
+    <div class="search-bar">
+      <input type="text" placeholder="Cari novel..." id="searchInput">
+      <select id="genreSelect">
+        <option value="">Pilih Genre</option>
+        <!-- Genre options dynamically loaded -->
+      </select>
+    </div>
+
+    <!-- Popular Novels Section -->
+    <div class="popular-novels">
+      <h2>Novel Paling Populer</h2>
+      <div class="novel-list" id="popularNovels">
+        <!-- List of popular novels will be dynamically loaded here -->
+      </div>
+    </div>
+
+    <!-- Latest Updates Section -->
+    <div class="latest-updates">
+      <h2>Update Terbaru</h2>
+      <div class="novel-list" id="latestUpdates">
+        <!-- Latest updated novels will be dynamically loaded here -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>© 2024 Novel Free</p>
+    </div>
+  </div>
+</body>
+</html>
